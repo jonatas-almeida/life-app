@@ -1,0 +1,126 @@
+@keyframes leftEnterAnim{
+    from{
+        margin-left: -150px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+.login-content{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.login-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-form{
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    animation-name: leftEnterAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.login-title{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #32FDAA;
+    font-size: 30pt;
+    font-weight: normal;
+    animation-name: leftEnterAnim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+}
+
+.login-title::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #32FDAA;
+    display: block;
+    margin-right: 10px;
+}
+
+.login-form label{
+    font-weight: bold;
+    font-size: 14pt;
+    color: #8a8a8a;
+    margin: 20px 0px;
+}
+
+.login-form input{
+    padding: 15px;
+    font-size: 14pt;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+    margin-bottom: 20px;
+    transition: all .2s;
+}
+
+.login-form input:focus{
+    transform: scale(1.1);
+}
+
+.register-page{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    a{
+        font-weight: bold;
+        color: #32FDAA;
+    }
+}
+
+.btn-login{
+    padding: 20px;
+    font-size: 14pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #32FDAA;
+    margin-top: 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-login:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 20px rgba($color: #32FDAA, $alpha: 0.5);
+}
+
+.login-img{
+    width: 960px;
+    margin-top: 100px;
+    animation-name: leftEnterAnim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.rodape{
+    text-align: center;
+    margin-top: 50px;
+    color: #8a8a8a;
+    font-size: 14pt;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #585858;
+    font-weight: bold;
+}
