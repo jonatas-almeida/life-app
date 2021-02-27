@@ -1,0 +1,222 @@
+.home-container{
+    height: 100vh;
+    background: #f7f7f7;
+}
+
+.header{
+    width: 100%;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #a1a1a1, $alpha: 0.1);
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: #32FDAA;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 10px;
+}
+
+.menu-itens{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-itens li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #a1a1a1;
+    display: flex;
+    align-items: center;
+}
+
+.menu-itens li a::before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #32FDAA;
+    transition: all .3s;
+}
+
+.menu-itens li a:hover::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 5px;
+}
+
+.home-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.home-content-card-title{
+    color: #32FDAA;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.home-content-card-title::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 10px;
+}
+
+.home-main-card{
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #747474, $alpha: 0.1);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item h3{
+    margin: 15px;
+    font-weight: bold;
+    font-size: 16pt;
+    cursor: default;
+}
+
+.card-item p{
+    font-size: 40pt;
+    font-weight: bold;
+    color: #a1a1a1;
+    cursor: default;
+}
+
+
+.card-img{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.available-doctors{
+    margin-top: 80px;
+}
+
+.available-doctors-title{
+    color: #32FDAA;
+    display: flex;
+    align-items: center;
+}
+
+.available-doctors-title::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 10px;
+}
+
+.home-content-card-title,
+.available-doctors-title{
+    font-size: 18pt;
+}
+
+.card-doctors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-docs{
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #747474, $alpha: 0.1);
+    border-radius: 10px;
+    margin: 30px 0px;
+    transition: all .3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-docs:hover{
+    transform: scale(1.1);
+}
+
+.doc-img{
+    width: 100px;
+    height: 100px;
+    background: #dbdbdb;
+    border-radius: 50%;
+}
+
+.doc-name{
+    font-size: 16pt;
+}
+
+.doc-info p{
+    padding: 5px;
+    background: #32FDAA;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn-add-exame{
+    width: 80px;
+    height: 80px;
+    background: #32FDAA;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba($color: #696969, $alpha: 0.1);
+}
+
+.btn-add-exame:hover{
+    transform: scale(1.1);
+}
+
+.btn-add-exame:active{
+    transform: scale(0.9);
+}

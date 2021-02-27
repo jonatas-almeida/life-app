@@ -2,12 +2,25 @@
     <div class="login-content">
         <div class="login-wrapper">
             <div class="login-form-content">
-                <form class="login-form">
+                <form [formGroup]="loginForm" class="login-form">
                     <h1 class="login-title">Life</h1>
+
+                    <!--User-->
                     <label>Usuário:</label>
-                    <input class="user-input" type="text">
+                    <input [ngClass]="{'is-invalid' : loginForm.get('username').errors && loginForm.get('username').touched}" formControlName="username" class="user-input" type="text">
+                    <!--Caso não seja digitado nada no campo ele exibe essa mensagem-->
+                    <div *ngIf="loginForm.get('username').hasError('required') && loginForm.get('username').touched" class="invalid-feedback">
+                        O usuário é obrigatório
+                    </div>
+
+                    <!--Senha-->
                     <label>Senha:</label>
-                    <input class="password-input" type="password">
+                    <input [ngClass]="{'is-invalid' : loginForm.get('password').errors && loginForm.get('password').touched}" formControlName="password" class="password-input" type="password">
+                    <!--Caso não seja digitado nada no campo ele exibe essa mensagem-->
+                    <div *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched" class="invalid-feedback">
+                        O usuário é obrigatório
+                    </div>
+
                     <p class="register-page">Ainda não tem conta? <a routerLink="/register">Clique aqui</a></p>
                     <button routerLink="/home" class="btn-login">Fazer login</button>
                 </form>
