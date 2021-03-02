@@ -111,12 +111,11 @@
   ],
   "usuario": [
     {
-      "common_user": [
-        {}
-      ],
-      "med_user": [
-        {}
-      ]
     }
+  ],
+  "medico": [
+      {
+
+      }
   ]
 }
