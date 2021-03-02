@@ -1,0 +1,212 @@
+@keyframes leftEnterAnim{
+    from{
+        margin-left: -100px;
+        opacity: 0;
+    }
+
+    to{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+
+.consultas-container{
+    overflow-x: hidden;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #a1a1a1, $alpha: 0.1);
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: #32FDAA;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 10px;
+}
+
+.menu-itens{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-itens li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #a1a1a1;
+    display: flex;
+    align-items: center;
+}
+
+.menu-itens li a::before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #32FDAA;
+    transition: all .3s;
+}
+
+.menu-itens li a:hover::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 5px;
+}
+
+.consultas-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.card-consultas-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    animation-name: leftEnterAnim;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.consultas-card{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+    margin: 30px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .3s;
+
+}
+
+.consultas-card:hover{
+    transform: scale(1.1);
+}
+
+.consultas-card h2{
+    font-size: 24pt;
+    margin-bottom: 15px;
+    color: #32FDAA;
+}
+
+.consultas-card p{
+    margin-bottom: 10px;
+}
+
+.consultas-section-title{
+    font-size: 30pt;
+    color: #32FDAA;
+    margin-top: 50px;
+}
+
+.divider{
+    border: none;
+    height: 2px;
+    border-radius: 5px;
+    background: #ebebeb;
+    margin: 30px 0px;
+}
+
+.highlight{
+    font-weight: bold;
+    color: #32FDAA;
+}
+
+.cancelled-consulta-highlight{
+    width: 200px;
+    padding: 10px;
+    background: #e61414;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 0px;
+    color: white;
+    text-align: center;
+}
+
+.card-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-edit{
+    width: 150px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #32FDAA;
+    color: #222;
+    font-size: 11pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-delete{
+    width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #32FDAA;
+    color: #222;
+    font-size: 11pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-register-consulta{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background: #32FDAA;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 99;
+}
+
+.btn-register-consulta:hover{
+    transform: scale(1.1);
+}
+
+.btn-register-consulta:active{
+    transform: scale(0.9);
+}
+

@@ -1,0 +1,170 @@
+@keyframes leftEnterAnim{
+    from{
+        margin-left: -100px;
+        opacity: 0;
+    }
+
+    to{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes rightEnterCharAnim{
+    from{
+        margin-right: 50px;
+        opacity: 0;
+    }
+
+    to{
+        margin-right: 0px;
+        opacity: 1;
+    }
+}
+
+.header{
+    width: 100%;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #a1a1a1, $alpha: 0.1);
+}
+
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: #32FDAA;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 10px;
+}
+
+.menu-itens{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-itens li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #a1a1a1;
+    display: flex;
+    align-items: center;
+}
+
+.menu-itens li a::before{
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #32FDAA;
+    transition: all .3s;
+}
+
+.menu-itens li a:hover::before{
+    content: '';
+    width: 15px;
+    height: 2px;
+    display: block;
+    background: #32FDAA;
+    margin-right: 5px;
+}
+
+.consulta-register-wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.register-form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 100px 0px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 10px;
+
+    animation-name: leftEnterAnim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.form-title{
+    margin-bottom: 40px;
+    color: #32FDAA;
+}
+
+.register-form label{
+    font-weight: bold;
+    color: #acacac;
+    margin-bottom: 10px;
+}
+
+.register-form input, select{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.1);
+    font-size: 12pt;
+}
+
+.btn-cadastrar{
+    width: 100%;
+    padding: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+    background: #32FDAA;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 30px;
+}
+
+.btn-cadastrar:hover{
+    transform: scale(1.1);
+}
+
+.btn-cadastrar:active{
+    transform: scale(0.9);
+}
+
+.checkbox-section{
+    display: none;
+}
+
+.consulta-register-img-content{
+    animation-name: rightEnterCharAnim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.consulta-register-img{
+    width: 520px;
+}

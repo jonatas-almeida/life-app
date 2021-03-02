@@ -101,6 +101,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.home-main-card:hover{
+    transform: scale(1.05);
 }
 
 .card-item{
@@ -205,7 +211,7 @@
     height: 80px;
     background: #32FDAA;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     right: 50px;
     bottom: 50px;
     transition: all .3s;

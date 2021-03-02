@@ -1,0 +1,44 @@
+<div class="consulta-register-container">
+    <div class="consulta-register-content">
+        <header class="header">
+            <nav class="menu">
+                <h1 class="logo" routerLink="/home">Life</h1>
+                <ul class="menu-itens">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Consulta de Exames</a></li>
+                    <li><a href="#">Agendar Exames</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="consulta-register-wrapper">
+            <form class="register-form" [formGroup]="registerForm">
+                <h1 class="form-title">Adicionar consulta</h1>
+                <label>Nome da consulta: </label>
+                <input type="text" formControlName="nome_consulta" name="nome_consulta">
+                <label>Médico: </label>
+                <select name="medico" formControlName="medico">
+                    <option>Dr. Hans Chucrutes</option>
+                    <option>Dra. Ana</option>
+                    <option>Dr. Jones</option>
+                </select>
+                <label>Data:</label>
+                <input type="date" name="data" formControlName="data">
+
+                <!--Essa parte ficará invisível para a validação do form-->
+                <!--O status e o cancelled foram definidos com esse valores padrões até que alguém altere-->
+                <div class="checkbox-section">
+                    <label>Status:</label>
+                    <input type="checkbox" formControlName="status" value="true" checked>
+                    <label>Cancelled:</label>
+                    <input type="checkbox" value="false" formControlName="cancelled">
+                </div>
+
+                <button type="submit" class="btn-cadastrar" (click)="addConsulta()">Cadastrar</button>
+            </form>
+            <div class="consulta-register-img-content">
+                <img class="consulta-register-img" src="../../../assets/consulta-register.svg">
+            </div>
+        </div>
+    </div>
+</div>

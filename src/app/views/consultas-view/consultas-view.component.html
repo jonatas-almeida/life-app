@@ -1,0 +1,34 @@
+<div class="consultas-container">
+    <div class="consultas-content">
+        <header class="header">
+            <nav class="menu">
+                <h1 class="logo">Life</h1>
+                <ul class="menu-itens">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Consulta de Exames</a></li>
+                    <li><a href="#">Agendar Exames</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="consultas-wrapper">
+            <h1 class="consultas-section-title">Minhas consultas</h1>
+            <hr class="divider">
+            <div class="card-consultas-wrapper">
+                <div class="consultas-card" *ngFor="let consulta of consultas">
+                    <h2>{{consulta.nome_consulta}}</h2>
+                    <p><span class="highlight">Data: </span> {{consulta.data}}</p>
+                    <p><span class="highlight">Médico: </span>{{consulta.medico}}</p>
+                    <p><span class="highlight">Status:</span>
+                        <span *ngIf="consulta.status == true"> Em andamento</span>
+                        <span *ngIf="consulta.status == false"> Encerrada</span></p>
+                    <p *ngIf="consulta.cancelled == true" class="cancelled-consulta-highlight">Consulta cancelada</p>
+                    <div class="card-buttons">
+                        <button class="btn-edit">Editar</button>
+                        <button class="btn-delete">Deletar</button>
+                    </div>
+                </div>
+            </div>
+        <div class="btn-register-consulta" routerLink="/consulta-register"></div>
+    </div>
+</div>

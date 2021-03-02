@@ -1,0 +1,122 @@
+{
+  "consulta": [
+    {
+      "id": 1,
+      "nome_consulta": "Exame cardiológico",
+      "medico": "Dr. Hans Chucrutes",
+      "data": "10/04/2021",
+      "status": true,
+      "cancelled": false
+    },
+    {
+      "id": 2,
+      "nome_consulta": "Pediatria",
+      "medico": "Dra. Ana",
+      "data": "05/02/2021",
+      "status": false,
+      "cancelled": true
+    },
+    {
+      "id": 3,
+      "nome_consulta": "Oncologista",
+      "medico": "Dr. Jones",
+      "data": "24/06/2021",
+      "status": true,
+      "cancelled": false
+    },
+    {
+      "nome_consulta": "Pediatra",
+      "medico": "Dr. Hans Chucrutes",
+      "data": "2021-03-17",
+      "id": 4
+    },
+    {
+      "nome_consulta": "Otorrino",
+      "medico": "Dra. Ana",
+      "data": "2021-03-26",
+      "id": 5
+    },
+    {
+      "nome_consulta": "Teste",
+      "medico": "Dra. Ana",
+      "data": "2021-03-20",
+      "status": true,
+      "cancelled": "",
+      "id": 6
+    },
+    {
+      "nome_consulta": "Teste 2",
+      "medico": "Dr. Jones",
+      "data": "2021-03-06",
+      "status": true,
+      "cancelled": true,
+      "id": 7
+    },
+    {
+      "nome_consulta": "Ortopedista",
+      "medico": "Dr. Hans Chucrutes",
+      "data": "2021-04-07",
+      "status": "true",
+      "cancelled": false,
+      "id": 8
+    },
+    {
+      "nome_consulta": "Teste 3",
+      "medico": "Dra. Ana",
+      "data": "2021-03-20",
+      "status": true,
+      "cancelled": false,
+      "id": 9
+    },
+    {
+      "nome_consulta": "Teste 5",
+      "medico": "Dr. Jones",
+      "data": "2021-03-23",
+      "status": true,
+      "cancelled": false,
+      "id": 10
+    },
+    {
+      "nome_consulta": "Pediatra",
+      "medico": "Dra. Ana",
+      "data": "2021-04-10",
+      "status": true,
+      "cancelled": false,
+      "id": 11
+    },
+    {
+      "nome_consulta": "Otorrino",
+      "medico": "Dr. Jones",
+      "data": "2021-03-22",
+      "status": true,
+      "cancelled": false,
+      "id": 12
+    },
+    {
+      "nome_consulta": "Teste 6",
+      "medico": "Dr. Jones",
+      "data": "2021-03-22",
+      "status": true,
+      "cancelled": false,
+      "id": 13
+    },
+    {
+      "nome_consulta": "Teste 7",
+      "medico": "Dr. Hans Chucrutes",
+      "data": "2021-04-27",
+      "status": true,
+      "cancelled": false,
+      "id": 14
+    }
+  ],
+  "usuario": [
+    {
+      "common_user": [
+        {}
+      ],
+      "med_user": [
+        {}
+      ]
+    }
+  ]
+}
