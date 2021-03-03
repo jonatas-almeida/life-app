@@ -6,16 +6,22 @@
                 <form class="register-form" [formGroup]="registerForm">
                     <label>Nome:</label>
                     <input type="text" class="user-name-input" formControlName="name">
+
                     <label>Usuário:</label>
                     <input type="text" class="user-input" formControlName="user_name">
+
                     <label>Email:</label>
                     <input type="email" class="user-input" formControlName="email">
+
                     <label>Telefone:</label>
                     <input type="text" class="user-input" formControlName="telefone">
+
                     <label>Senha:</label>
                     <input type="password" class="password-input" formControlName="senha">
+
                     <label>Confirmar senha:</label>
                     <input type="password" class="confirm-password-input" formControlName="confirm_senha">
+                    
                     <button class="btn-register" (click)="addUser()">Cadastrar</button>
                 </form>
             </div>
