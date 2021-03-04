@@ -26,7 +26,21 @@
                 </form>
             </div>
             <div class="register-img-container">
-                <img class="register-img" src="../../../assets/register.svg">
+                <h1>Cadastrar Médicos</h1>
+                <form class="register-form doctor-form" [formGroup]="doctorForm">
+                    <label>Nome do médico:</label>
+                    <input type="text" formControlName="doctor_name">
+                    <label>Cargo do médico:</label>
+                    <select formControlName="doctor_role">
+                        <option disabled>Selecione uma função</option>
+                        <option>Cardiologista</option>
+                        <option>Oncologista</option>
+                        <option>Neurologista</option>
+                        <option>Pediatra</option>
+                        <option>Ortopedia</option>
+                    </select>
+                    <button class="btn-register" (click)="addDoctors()">Cadastrar</button>
+                </form>
             </div>
         </div>
     </div>

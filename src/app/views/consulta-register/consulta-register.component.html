@@ -17,10 +17,8 @@
                 <label>Nome da consulta: </label>
                 <input type="text" formControlName="nome_consulta" name="nome_consulta">
                 <label>Médico: </label>
-                <select name="medico" formControlName="medico">
-                    <option>Dr. Hans Chucrutes</option>
-                    <option>Dra. Ana</option>
-                    <option>Dr. Jones</option>
+                <select name="medico" formControlName="medico" >
+                    <option *ngFor="let doctor of doctors">{{doctor.doctor_name}}</option>
                 </select>
                 <label>Data:</label>
                 <input type="date" name="data" formControlName="data">

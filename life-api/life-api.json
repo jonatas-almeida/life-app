@@ -107,6 +107,14 @@
       "status": true,
       "cancelled": false,
       "id": 14
+    },
+    {
+      "nome_consulta": "Outro teste",
+      "medico": "Dr. Jones",
+      "data": "2021-04-10",
+      "status": true,
+      "cancelled": false,
+      "id": 15
     }
   ],
   "usuario": [
@@ -127,7 +135,32 @@
       "senha": "123456789",
       "confirm_senha": "123456789",
       "id": 2
+    },
+    {
+      "name": "Jonatas Bezerra de Almeida",
+      "user_name": "jonatas",
+      "email": "jonatas_almeida@email.com",
+      "telefone": "81111111111111",
+      "senha": "123456",
+      "confirm_senha": "123456",
+      "id": 3
     }
   ],
-  "medico": []
+  "medico": [
+    {
+      "doctor_name": "Dr. Maurício Ramos",
+      "doctor_role": "Pediatra",
+      "id": 1
+    },
+    {
+      "doctor_name": "Dr. Ana",
+      "doctor_role": "Cardiologista",
+      "id": 2
+    },
+    {
+      "doctor_name": "Dr. Hans Schucrutz",
+      "doctor_role": "Neurologista",
+      "id": 3
+    }
+  ]
 }

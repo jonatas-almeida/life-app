@@ -38,7 +38,8 @@
 .register-form{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .register-form label{
@@ -48,7 +49,7 @@
     margin: 20px 0px;
 }
 
-.register-form input{
+.register-form input, select{
     width: 100%;
     padding: 15px;
     font-size: 14pt;
