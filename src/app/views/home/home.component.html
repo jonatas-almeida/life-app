@@ -36,25 +36,11 @@
                 <!--Aqui terá a repetição dos itens vindos da API-->
                 <h3 class="available-doctors-title">Médicos disponíveis</h3>
                 <div class="card-doctors">
-                    <div class="card-docs card-doc-one">
+                    <div class="card-docs card-doc-one" *ngFor="let doctor of doctors">
                         <div class="doc-img"></div>
                         <div class="doc-info">
-                            <h3 class="doc-name">Dr.John</h3>
-                            <p>Cardiologista</p>
-                        </div>
-                    </div>
-                    <div class="card-docs card-doc-two">
-                        <div class="doc-img"></div>
-                        <div class="doc-info">
-                            <h3 class="doc-name">Dr. Doe</h3>
-                            <p>Pediatra</p>
-                        </div>
-                    </div>
-                    <div class="card-docs card-doc-three">
-                        <div class="doc-img"></div>
-                        <div class="doc-info">
-                            <h3 class="doc-name">Dr. May</h3>
-                            <p>Oncologista</p>
+                            <h3 class="doc-name">{{doctor.doctor_name}}</h3>
+                            <p>{{doctor.doctor_role}}</p>
                         </div>
                     </div>
                 </div>
