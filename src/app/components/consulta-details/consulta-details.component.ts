@@ -23,7 +23,7 @@ export class ConsultaDetailsComponent implements OnInit {
     this.getConsulta();
   }
 
-  //Pegar uma consulta específica
+  //Pega os dados da consulta selecionada
   getConsulta(){
     this.consultaService.getConsulta(this.userId).subscribe(
       (response) => {
@@ -49,11 +49,5 @@ export class ConsultaDetailsComponent implements OnInit {
       )
      }
   }
-
-
-
-
-
-  
 
 }

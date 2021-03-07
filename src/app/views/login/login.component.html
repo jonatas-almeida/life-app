@@ -18,7 +18,7 @@
                     <input [ngClass]="{'is-invalid' : loginForm.get('password').errors && loginForm.get('password').touched}" formControlName="password" class="password-input" type="password">
                     <!--Caso não seja digitado nada no campo ele exibe essa mensagem-->
                     <div *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched" class="invalid-feedback">
-                        O usuário é obrigatório
+                        A senha é obrigatório 
                     </div>
 
                     <p class="register-page">Ainda não tem conta? <a routerLink="/register">Clique aqui</a></p>

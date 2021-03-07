@@ -4,7 +4,7 @@
             <div class="consulta-details-card">
                 <h1>Detalhes da consulta</h1>
                 <hr class="divider">
-                <h3>Nome: {{consulta.nome_consulta}}</h3>
+                <h3>Nome da consulta: {{consulta.nome_consulta}}</h3>
                 <p>Médico: {{consulta.medico}}</p>
                 <p>Data da consulta: {{consulta.data}}</p>
                 <p>Status: <span *ngIf="consulta.status == true">Em andamento</span><span *ngIf="consulta.cancelled == true">Cancelada</span></p>
