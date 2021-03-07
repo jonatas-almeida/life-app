@@ -45,14 +45,6 @@
       "id": 8
     },
     {
-      "nome_consulta": "Teste 3",
-      "medico": "Dra. Ana",
-      "data": "2021-03-20",
-      "status": true,
-      "cancelled": false,
-      "id": 9
-    },
-    {
       "nome_consulta": "Teste 5",
       "medico": "Dr. Jones",
       "data": "2021-03-23",
@@ -83,22 +75,6 @@
       "status": true,
       "cancelled": false,
       "id": 13
-    },
-    {
-      "nome_consulta": "Teste 7",
-      "medico": "Dr. Hans Chucrutes",
-      "data": "2021-04-27",
-      "status": true,
-      "cancelled": false,
-      "id": 14
-    },
-    {
-      "nome_consulta": "Outro teste",
-      "medico": "Dr. Jones",
-      "data": "2021-04-10",
-      "status": true,
-      "cancelled": false,
-      "id": 15
     }
   ],
   "usuario": [

@@ -36,14 +36,18 @@ export class ConsultaDetailsComponent implements OnInit {
 
   //Deletar uma consulta
   deleteConsulta(){
-    this.consultaService.deleteConsulta(this.userId).subscribe(
-      () => {
-        alert("Consultar deletada com sucesso!");
-        this.router.navigateByUrl("/consultas-view");
-      }, error => {
-        console.log(`Não foi possível deletar a consulta: ${error}`);
-      }
-    )
+     const alert = window.confirm("Você tem certeza que deseja excluir essa consulta?");
+
+     if(alert == true){
+      this.consultaService.deleteConsulta(this.userId).subscribe(
+        () => {
+          window.alert("Consulta deletada com sucesso!");
+          this.router.navigateByUrl("/consultas-view");
+        }, error => {
+          console.log(`Não foi possível deletar a consulta: ${error}`);
+        }
+      )
+     }
   }
 
 
