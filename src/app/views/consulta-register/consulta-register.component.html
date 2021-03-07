@@ -18,7 +18,7 @@
                 <input type="text" formControlName="nome_consulta" name="nome_consulta">
                 <label>Médico: </label>
                 <select name="medico" formControlName="medico" >
-                    <option *ngFor="let doctor of doctors">{{doctor.doctor_name}}</option>
+                    <option *ngFor="let doctor of doctors">{{doctor.doctor_name}} - {{doctor.doctor_role}}</option>
                 </select>
                 <label>Data:</label>
                 <input type="date" name="data" formControlName="data">
