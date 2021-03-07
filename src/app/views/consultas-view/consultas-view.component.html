@@ -24,11 +24,11 @@
                         <span *ngIf="consulta.status == false"> Encerrada</span></p>
                     <p *ngIf="consulta.cancelled == true" class="cancelled-consulta-highlight">Consulta cancelada</p>
                     <div class="card-buttons">
-                        <button class="btn-edit">Editar</button>
-                        <button class="btn-delete">Deletar</button>
+                        <button class="btn-edit" routerLink="/consultas-view/{{consulta.id}}">Detalhes</button>
                     </div>
                 </div>
             </div>
         <div class="btn-register-consulta" routerLink="/consulta-register"></div>
+
     </div>
 </div>

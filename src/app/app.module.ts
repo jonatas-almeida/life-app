@@ -9,10 +9,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
-import { ListaConsultasComponent } from './components/lista-consultas/lista-consultas.component';
-import { AdicionarConsultaComponent } from './components/adicionar-consulta/adicionar-consulta.component';
 import { ConsultasViewComponent } from './views/consultas-view/consultas-view.component';
 import { ConsultaRegisterComponent } from './views/consulta-register/consulta-register.component';
+import { ConsultaDetailsComponent } from './components/consulta-details/consulta-details.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +19,9 @@ import { ConsultaRegisterComponent } from './views/consulta-register/consulta-re
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    ListaConsultasComponent,
-    AdicionarConsultaComponent,
     ConsultasViewComponent,
-    ConsultaRegisterComponent
+    ConsultaRegisterComponent,
+    ConsultaDetailsComponent
   ],
   imports: [
     BrowserModule,

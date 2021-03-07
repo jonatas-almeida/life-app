@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ConsultaDetailsComponent } from './components/consulta-details/consulta-details.component';
 import { ConsultaRegisterComponent } from './views/consulta-register/consulta-register.component';
 //Components
 import { ConsultasViewComponent } from './views/consultas-view/consultas-view.component';
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'consulta-register',
     component: ConsultaRegisterComponent
+  },
+  {
+    path: 'consultas-view/:id',
+    component: ConsultaDetailsComponent
   },
   {
     path: '',

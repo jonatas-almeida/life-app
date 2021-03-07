@@ -9,14 +9,6 @@
       "cancelled": false
     },
     {
-      "id": 2,
-      "nome_consulta": "Pediatria",
-      "medico": "Dra. Ana",
-      "data": "05/02/2021",
-      "status": false,
-      "cancelled": true
-    },
-    {
       "id": 3,
       "nome_consulta": "Oncologista",
       "medico": "Dr. Jones",
@@ -43,14 +35,6 @@
       "status": true,
       "cancelled": "",
       "id": 6
-    },
-    {
-      "nome_consulta": "Teste 2",
-      "medico": "Dr. Jones",
-      "data": "2021-03-06",
-      "status": true,
-      "cancelled": true,
-      "id": 7
     },
     {
       "nome_consulta": "Ortopedista",
@@ -115,22 +99,6 @@
       "status": true,
       "cancelled": false,
       "id": 15
-    },
-    {
-      "nome_consulta": "Ultrassonografia",
-      "medico": "Dr. Roberto Hitz",
-      "data": "2021-03-16",
-      "status": true,
-      "cancelled": false,
-      "id": 16
-    },
-    {
-      "nome_consulta": "Exame neurológico",
-      "medico": "Dr. Taub Heckmann",
-      "data": "2021-03-25",
-      "status": true,
-      "cancelled": false,
-      "id": 17
     }
   ],
   "usuario": [
