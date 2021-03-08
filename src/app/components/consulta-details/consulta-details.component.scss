@@ -1,0 +1,120 @@
+.consulta-details-content{
+    display: flex;
+    padding: 100px;
+}
+
+.consulta-details-wrapper{
+    margin-left: 100px;
+}
+
+.app-title{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #32FDAA;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.app-title::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #32FDAA;
+    margin-right: 10px;
+}
+
+.menu{
+    height: 200px;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 10px;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.menu li{
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: #adadad;
+}
+
+.details-page-title{
+    color: #32FDAA;
+    margin: 20px 0px;
+}
+
+.divider{
+    border: none;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.details-card{
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 18pt;
+    color: #32FDAA;
+    margin-bottom: 10px;
+}
+
+.card-details{
+    font-weight: bold;
+    color: #adadad;
+    margin: 10px 0px;
+}
+
+
+.card-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.btn-deletar{
+    width: 180px;
+    padding: 15px;
+    background: #e23737;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-left: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn-deletar:hover{
+    transform: scale(0.9);
+}
+
+
+.btn-alterar{
+    width: 250px;
+    padding: 15px;
+    background: #32FDAA;
+    color: #222;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12pt;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn-alterar:hover{
+    transform: scale(0.9);
+}
+
+

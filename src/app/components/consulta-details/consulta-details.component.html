@@ -1,14 +1,27 @@
 <div class="consulta-details-container">
     <div class="consulta-details-content">
+        <div class="side-menu">
+            <h1 class="app-title">Life</h1>
+            <ul class="menu">
+                <li class="menu-itens" routerLink="/home">Home</li>
+                <li class="menu-itens" routerLink="/consultas-view">Minhas consultas</li>
+            </ul>
+        </div>
         <div class="consulta-details-wrapper">
             <div class="consulta-details-card">
-                <h1>Detalhes da consulta</h1>
+                <h1 class="details-page-title">Detalhes da consulta</h1>
                 <hr class="divider">
-                <h3>Nome da consulta: {{consulta.nome_consulta}}</h3>
-                <p>Médico: {{consulta.medico}}</p>
-                <p>Data da consulta: {{consulta.data}}</p>
-                <p>Status: <span *ngIf="consulta.status == true">Em andamento</span><span *ngIf="consulta.cancelled == true">Cancelada</span></p>
-                <button (click)="deleteConsulta()"class="btn-deletar">Excluir consulta</button>
+                <div class="details-card">
+                    <h3 class="card-title">Nome da consulta: {{consulta.nome_consulta}}</h3>
+                    <p class="card-details">Médico: {{consulta.medico}}</p>
+                    <p class="card-details">Data da consulta: {{consulta.data}}</p>
+                    <p class="card-details">Status: <span *ngIf="consulta.status == true">Em andamento</span><span *ngIf="consulta.cancelled == true">Cancelada</span></p>
+                    <div class="card-buttons">
+                        <button class="btn-alterar">Alterar consulta
+                        </button>
+                        <button (click)="deleteConsulta()"class="btn-deletar">Excluir consulta</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
