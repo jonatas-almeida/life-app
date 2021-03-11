@@ -118,3 +118,55 @@
 }
 
 
+
+.modal-title{
+    font-weight: bold;
+    color: #32FDAA;
+}
+
+.edit-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-form label{
+    font-weight: bold;
+    font-size: 14pt;
+    color: #adadad;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.edit-form input, select{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.1);
+}
+
+.btn-save-edit{
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #32FDAA;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #222;
+    transition: all .3s;
+}
+
+.btn-save-edit:active{
+    transform: scale(0.9);
+}
+
+
+.status-wrapper{
+    display: none;
+}
+
+.cancelar-consulta-wrapper{
+    display: flex;
+    flex-direction: column;
+}

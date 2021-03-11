@@ -67,14 +67,6 @@
       "status": true,
       "cancelled": false,
       "id": 13
-    },
-    {
-      "nome_consulta": "Teste 10",
-      "medico": "Dr. Roberto Hitz - Ortopedia",
-      "data": "2021-03-12",
-      "status": true,
-      "cancelled": false,
-      "id": 14
     }
   ],
   "usuario": [

@@ -17,11 +17,42 @@
                     <p class="card-details">Data da consulta: {{consulta.data}}</p>
                     <p class="card-details">Status: <span *ngIf="consulta.status == true">Em andamento</span><span *ngIf="consulta.cancelled == true">Cancelada</span></p>
                     <div class="card-buttons">
-                        <button class="btn-alterar">Alterar consulta
+                        <button class="btn-alterar" (click)="editarConsulta(consulta, content)">Editar consulta
                         </button>
                         <button (click)="deleteConsulta()"class="btn-deletar">Excluir consulta</button>
                     </div>
                 </div>
+
+                <!--Modal de Editar Consulta-->
+                <ng-template #content let-modal>
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="modal-basic-title">Editar consulta</h4>
+                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="edit-form" [formGroup]="editForm">
+                            <label>Nome da consulta:</label>
+                            <input class="edit-form-input" formControlName="nome_consulta" type="text">
+                            <label>Médico:</label>
+                            <select name="medico" formControlName="medico">
+                                <option *ngFor="let doctor of doctors">{{doctor.doctor_name}} - {{doctor.doctor_role}}</option>
+                            </select>
+                            <label>Data da consulta:</label>
+                            <input class="edit-form-input" formControlName="data" type="date">
+                            <div class="status-wrapper">
+                                <label>Status:</label>
+                                <input class="edit-form-input" formControlName="status" type="checkbox" name="status" value="true">
+                            </div>
+                            <div class="cancelar-consulta-wrapper">
+                                <label>Cancelar consulta:</label>
+                                <input class="edit-form-input" formControlName="cancelled" type="checkbox" name="cancelled" value="false">
+                            </div>
+                            <button class="btn-save-edit" (click)="editConsulta()">Salvar alterações</button>
+                        </form>
+                    </div>
+                  </ng-template>
             </div>
         </div>
     </div>

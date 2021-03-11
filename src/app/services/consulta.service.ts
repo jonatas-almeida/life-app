@@ -30,6 +30,10 @@ export class ConsultaService {
     return this.http.post(`${this.baseUrl}`, consulta);
   }
 
+  putConsulta(consulta: Consulta, id:number){
+    return this.http.put(`${this.baseUrl}/${id}`, consulta);
+  }
+
   //Método Delete
   deleteConsulta(id: number){
     return this.http.delete(`${this.baseUrl}/${id}`);
