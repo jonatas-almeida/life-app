@@ -13,6 +13,10 @@
         </header>
         <div class="consultas-wrapper">
             <h1 class="consultas-section-title">Minhas consultas</h1>
+            <form class="search-form">
+                <input type="text" placeholder="Procurar" class="search-input">
+                <button class="btn-buscar">Buscar</button>
+            </form>
             <hr class="divider">
             <div class="card-consultas-wrapper">
                 <div class="consultas-card" *ngFor="let consulta of consultas">

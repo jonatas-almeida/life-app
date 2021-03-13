@@ -25,16 +25,19 @@ export class ConsultaDetailsComponent implements OnInit {
     this.actRouter.params.subscribe(params => this.userId = params['id']);
   }
 
+  
   ngOnInit(): void {
     this.getConsulta();
     this.editFormValidation();
     this.getDoctors();
   }
 
+
   //Abre o modal
   openModal(content){
     this.modalService.open(content);
   }
+
 
   //Validation
   editFormValidation(){
@@ -47,6 +50,7 @@ export class ConsultaDetailsComponent implements OnInit {
     });
   }
 
+
   //Pega os dados da consulta selecionada
   getConsulta(){
     this.consultaService.getConsulta(this.userId).subscribe(
@@ -58,6 +62,7 @@ export class ConsultaDetailsComponent implements OnInit {
     )
   }
 
+
   //Pega os dados dos médicos e carrega no campo "Médico" do formulário
   getDoctors(){
     this.usuarioService.getAllDoctors().subscribe(
@@ -68,6 +73,7 @@ export class ConsultaDetailsComponent implements OnInit {
       }
     )
   }
+
 
   //Deletar uma consulta
   deleteConsulta(){
@@ -85,7 +91,9 @@ export class ConsultaDetailsComponent implements OnInit {
      }
   }
 
-  //Carrega os dados da consult nos campos
+
+
+  //Carrega os dados da consulta nos campos
   editarConsulta(consulta: Consulta, content: any){
     this.openModal(content);
     this.consulta = Object.assign({}, consulta);

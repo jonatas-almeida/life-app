@@ -13,15 +13,13 @@ export class ConsultasViewComponent implements OnInit {
   constructor(private consultaService: ConsultaService, private router: Router) { }
 
   consultas: Consulta;
+  consultaName: string;
+  searchResult: any;
   bodyDeletarConsulta: string;
+
 
   ngOnInit(): void {
     this.getConsultas();
-  }
-
-  excluirConsulta(consulta: Consulta, template: any){
-    this.consultas = consulta;
-    this.bodyDeletarConsulta = `Tem certeza que deseja deletar a consulta: ${consulta.nome_consulta}`;
   }
 
 
@@ -32,6 +30,7 @@ export class ConsultasViewComponent implements OnInit {
       this.consultas = response.reverse();
     });
   }
+
 
 
 }
